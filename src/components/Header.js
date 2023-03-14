@@ -18,6 +18,23 @@ const Header = () => {
     }
   }, [isMenuOpen]);
 
+  const mainNav = [{
+    slug: '/',
+    title: "Home"
+},{
+    slug: '/about-me',
+    title: "About Me"
+},
+{
+    slug: '/my-work',
+    title: "My Work"
+},
+{
+    slug: '/contact',
+    title: "Contact Me"
+}
+]
+
   return (
     <header>
         <div className="header_container">
@@ -26,6 +43,15 @@ const Header = () => {
               Rahul Souram
             </Link>
           </div>
+          <ul className="header-menu-list">
+        {mainNav.map((nav) => (
+          <li className="header-menu-list-item">
+            <Link to={nav.slug} onClick={() => setIsMenuOpen(false)}>
+              {nav.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
           <div className="menu-bar">
             <button type="button" className={`${menuDisplay}`} onClick={MenuHandler}>
               <span></span>
@@ -39,7 +65,7 @@ const Header = () => {
             isMenuOpen ? 'active menu-wrapper' : 'inactive menu-wrapper'
           }
         >
-          <Menu setIsMenuOpen={setIsMenuOpen} />
+          <Menu setIsMenuOpen={setIsMenuOpen} mainNav={mainNav} />
         </div>
     </header>
   );

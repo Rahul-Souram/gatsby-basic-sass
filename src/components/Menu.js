@@ -1,23 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-const Menu = ({ setIsMenuOpen }) => {
-    const mainNav = [{
-        slug: '/',
-        title: "Home"
-    },{
-        slug: '/about-me',
-        title: "About Me"
-    },
-    {
-        slug: '/my-work',
-        title: "My Work"
-    },
-    {
-        slug: '/contact',
-        title: "Contact Me"
-    }
-]
+const Menu = ({ setIsMenuOpen ,mainNav}) => {
+
   return (
     <div className="menu-list-wrapper">
       <ul className="menu-list">

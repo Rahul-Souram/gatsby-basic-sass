@@ -1,6 +1,10 @@
 .menu {
     &-bar {
       z-index: 999;
+      display: block;
+      @media (min-width:768px) {
+        display: none;
+      }
       button {
         background-color: transparent;
         border: none;
@@ -64,7 +68,7 @@
       }
     }
     &-wrapper {
-    background: #463175;
+      background: $bg;
       position: fixed;
       transition: 1.2s;
       display: flex;

@@ -1,13 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+$bg:#3e3552;
+
 body {
-  background-color: #7660ab;
+  background-color: #655b7d;
   color: #fff;
   font-family: "Poppins", sans-serif;
   a {
     color: #fff;
     text-decoration: none;
   }
+  .container {
+    padding: 0 5%;
+  }
+  .btn{
+    border-radius: 8px;
+    border: 1px double #fff;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    a{
+      text-transform: capitalize;
+    }
+  }
 }
 @import "./header";
 @import "./menu";
+@import "./home-banner";

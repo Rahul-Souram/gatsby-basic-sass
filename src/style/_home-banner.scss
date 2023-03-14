@@ -1,0 +1,73 @@
+.home-banner {
+  &-container {
+    margin: 5% auto;
+    background: $bg;
+    padding: 7% 2rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px $bg;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    padding: 5% 2rem;
+
+    }
+  }
+  &-image {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px #fff;
+    }
+    width: 100%;
+    @media (min-width: 576px) {
+      width: 50%;
+    }
+    @media (min-width: 768px) {
+      width: 30%;
+    }
+    height: 100%;
+  }
+  &-title {
+    font-weight: 500;
+    @media (min-width:576px) {
+      font-size: 2rem;      
+    }
+    @media (min-width: 992px) {
+      font-size: 2.8rem;
+    }
+  }
+  &-tagline {
+    font-size: 1.8rem;
+    font-weight: 500;
+    @media (min-width:992px) {
+      font-size: 2rem;
+    }
+  }
+  &-description {
+    margin: 2rem auto;
+    @media (min-width: 768px) {
+      max-width: 68%;
+      margin: 2rem 0;
+    }
+  }
+  &-info {
+    text-align: center;
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 50%;
+      text-align: left;
+    }
+    .btn {
+    margin: 0 auto;
+      @media (min-width: 768px) {
+        margin: auto 0;
+      }
+    }
+  }
+}
