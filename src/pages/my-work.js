@@ -1,8 +1,13 @@
-import React from 'react'
+import React from "react"
+import Swiper from "../components/Swiper"
 
 const MyWork = () => {
   return (
-    <div>MyWork</div>
+    <div>
+      MyWork
+      <Swiper />
+      <Swiper />
+    </div>
   )
 }
 

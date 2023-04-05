@@ -5809,6 +5809,11 @@ gray-matter@^4.0.3:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
+gsap@^3.11.5:
+  version "3.11.5"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.11.5.tgz#97ef65091f43868be387803f9db277e8cd5bd041"
+  integrity sha512-Q89nKCLgoX5xUjznh9LcaIUkz54k1voNucT1Rpf9SJNFIQznBwFqt5qUUQbeVInFyN/n18OUJkpeI6CNEDt74w==
+
 gzip-size@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/gzip-size/-/gzip-size-6.0.0.tgz#065367fd50c239c0671cbcbad5be3e2eeb10e462"
@@ -8535,6 +8540,21 @@ react-error-overlay@^6.0.11:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
 
+react-fast-compare@^3.1.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.1.tgz#53933d9e14f364281d6cba24bfed7a4afb808b5f"
+  integrity sha512-xTYf9zFim2pEif/Fw16dBiXpe0hoy5PxcD8+OwBnTtNLfIm3g6WxhKNurY+6OmdH1u6Ta/W/Vl6vjbYP1MFnDg==
+
+react-helmet@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-6.1.0.tgz#a750d5165cb13cf213e44747502652e794468726"
+  integrity sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
+  dependencies:
+    object-assign "^4.1.1"
+    prop-types "^15.7.2"
+    react-fast-compare "^3.1.1"
+    react-side-effect "^2.1.0"
+
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -8558,6 +8578,11 @@ react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825:
     acorn "^6.2.1"
     loose-envify "^1.1.0"
     neo-async "^2.6.1"
+
+react-side-effect@^2.1.0:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"
+  integrity sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==
 
 react@^18.1.0:
   version "18.2.0"
@@ -9405,6 +9430,11 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==
 
+ssr-window@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
+  integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
+
 st@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/st/-/st-2.0.0.tgz#eabd11e7722863b8ee8cfbdd027cb25e76ff35e9"
@@ -9691,6 +9721,13 @@ swap-case@^2.0.2:
   integrity sha512-kc6S2YS/2yXbtkSMunBtKdah4VFETZ8Oh6ONSmSd9bRxhqTrtARUCBUiWXH3xVPpvR7tz2CSnkuXVE42EcGnMw==
   dependencies:
     tslib "^2.0.3"
+
+swiper@^9.2.0:
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-9.2.0.tgz#40e950b1c0d516403b3bf7083560ebac22a6f325"
+  integrity sha512-lWK9toYumUQss+YuTL+Mt0+8twiMJEyzioER4bbS4rrGHlkeLrDM8uhtAmnpdijELrNscuNUujDgKoMQZfQGlQ==
+  dependencies:
+    ssr-window "^4.0.2"
 
 table@^6.0.9:
   version "6.8.1"
