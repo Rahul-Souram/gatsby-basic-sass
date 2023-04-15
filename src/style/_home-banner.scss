@@ -4,7 +4,7 @@
     background: $bg;
     padding: 7% 2rem;
     border-radius: 8px;
-    box-shadow: 2px 2px 7px $bg;
+    box-shadow: 0 0 3px #fff;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
@@ -62,6 +62,16 @@
     @media (min-width: 768px) {
       width: 50%;
       text-align: left;
+    }
+    &-title{
+      text-align: center;
+      @media (min-width:768px) {
+        text-align: left;
+      }
+      ul{
+        padding: 0;
+        list-style: none;
+      }
     }
     .btn {
     margin: 0 auto;

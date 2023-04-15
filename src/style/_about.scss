@@ -1,0 +1,52 @@
+.timeline {
+  &-container {
+    margin: 5% auto;
+  }
+  &-card {
+    padding: 1rem;
+    background: $bg;
+    border-radius: 10px;
+    margin: 1rem auto;
+    box-shadow: 0 0 7px #fff;
+    @media (min-width: 768px) {
+      width: 80%;
+      margin: 1rem auto;
+    }
+    @media (min-width: 992px) {
+      width: 48%;
+    }
+    @media (min-width: 1200px) {
+      width: 45%;
+    }
+    &-title {
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #fff;
+      text-transform: capitalize;
+      @media (min-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
+    &-summary {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @media (min-width: 992px) {
+        .timeline-card {
+          &:nth-child(2n) {
+            margin: 1rem 0 1rem auto;
+          }
+          &:nth-child(2n + 1) {
+            margin: 1rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -13,16 +13,9 @@ body {
   .container {
     padding: 0 5%;
   }
-  .btn{
-    border-radius: 8px;
-    border: 1px double #fff;
-    padding: 0.5rem 1rem;
-    width: fit-content;
-    a{
-      text-transform: capitalize;
-    }
-  }
 }
 @import "./header";
 @import "./menu";
 @import "./home-banner";
+@import "./common";
+@import "./about";
