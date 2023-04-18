@@ -1,18 +1,28 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import ReactMarkdown from "react-markdown"
+import { SlideUpTitle } from "../animations/SlideUpTitle"
+import { SlideUpContent } from "../animations/SideUpContent"
+import { CardAnimation } from "../animations/CardAnimation"
 
 const AboutMe = ({ data }) => {
   const { title, description, timeline } = data.strapiAboutpage
   return (
     <div className="container">
+        <SlideUpTitle delaySec={0.5} durationTime={0.5}>
       <h2 className="center-text">{title}</h2>
+        </SlideUpTitle>
       <div className="list-container">
+      <SlideUpContent delaySec={0.5} durationTime={1}>
         <ReactMarkdown>{description.data.description}</ReactMarkdown>
+      </SlideUpContent>
       </div>
       <div className="timeline-container">
+      <SlideUpTitle delaySec={0.5} durationTime={0.5}>
         <h2 className="center-text">My Timeline</h2>
+      </SlideUpTitle>
         <div className="timeline-card-container">
+          <CardAnimation delaySec={0.5} durationTime={0.7}>
           {timeline.map(item => {
             const { description, timeperiod } = item
             return (
@@ -24,6 +34,7 @@ const AboutMe = ({ data }) => {
               </div>
             )
           })}
+          </CardAnimation>
         </div>
       </div>
       <div className="btn work">

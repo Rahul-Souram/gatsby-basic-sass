@@ -2,6 +2,9 @@ import React, { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
 import { graphql } from "gatsby"
 import SvgComponent from "../components/SvgComponent"
+import { SlideUpTitle } from "../animations/SlideUpTitle"
+import { SlideUpContent } from "../animations/SideUpContent"
+import { CardAnimation } from "../animations/CardAnimation"
 
 const Contact = ({ data }) => {
   const form = useRef()
@@ -57,8 +60,12 @@ const Contact = ({ data }) => {
 
   return (
     <div className="container">
-      <h2 className="center-text">{title}</h2>
-      <h3 className="center-text">{description.data.description}</h3>
+      <SlideUpTitle delaySec={0.5} durationTime={0.5}>
+        <h2 className="center-text">{title}</h2>
+      </SlideUpTitle>
+      <SlideUpTitle delaySec={0.5} durationTime={0.5}>
+        <h3 className="center-text">{description.data.description}</h3>
+      </SlideUpTitle>
       <div className="form-container">
         {success && (
           <div className="form-message success">
@@ -77,46 +84,50 @@ const Contact = ({ data }) => {
             Please fill all the required blanks.
           </div>
         )}
-        <form ref={form} onSubmit={sendEmail} className="form">
-          <input
-            type="text"
-            name="form_name"
-            placeholder="My Name is"
-            className="form-input"
-          />
-          <input
-            type="email"
-            name="form_email"
-            placeholder="My Email"
-            className="form-input"
-          />
-          <input
-            type="tel"
-            name="form_phone"
-            placeholder="My contact"
-            className="form-input"
-          />
-          <textarea
-            name="message"
-            rows={5}
-            placeholder="Message"
-            className="form-input"
-          />
-          <button type="submit" className="btn contact">
-            Submit
-          </button>
-        </form>
+        <CardAnimation delaySec={0.3} durationTime={0.5}>
+          <form ref={form} onSubmit={sendEmail} className="form">
+            <input
+              type="text"
+              name="form_name"
+              placeholder="My Name is"
+              className="form-input"
+            />
+            <input
+              type="email"
+              name="form_email"
+              placeholder="My Email"
+              className="form-input"
+            />
+            <input
+              type="tel"
+              name="form_phone"
+              placeholder="My contact"
+              className="form-input"
+            />
+            <textarea
+              name="message"
+              rows={5}
+              placeholder="Message"
+              className="form-input"
+            />
+            <button type="submit" className="btn contact">
+              Submit
+            </button>
+          </form>
+        </CardAnimation>
       </div>
+      <SlideUpContent delaySec={1} >
         <h3 className="center-text">You can also reach me through</h3>
-      <div className="contact-details">
-        <h3>
-          Phone : <span>{phone} </span>
-          <span>( OR )</span>
-        </h3>
-        <a href={linkedIn} target="_blank" rel="noreferrer">
-        <SvgComponent logo="linkedin" />
-        </a>
-      </div>
+        <div className="contact-details">
+          <h3>
+            Phone : <span>{phone} </span>
+            <span>( OR )</span>
+          </h3>
+          <a href={linkedIn} target="_blank" rel="noreferrer">
+            <SvgComponent logo="linkedin" />
+          </a>
+        </div>
+      </SlideUpContent>
     </div>
   )
 }

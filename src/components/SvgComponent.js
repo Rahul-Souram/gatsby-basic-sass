@@ -1,16 +1,14 @@
-import React from 'react'
+import React from "react"
 import Icons from "../assets/icons/icons.svg"
 
-const SvgComponent = ({logo}) => {
+const SvgComponent = ({ logo }) => {
   return (
     <div className="icon-container-inner">
-    <svg className="icon-logo">
-      <use
-        xlinkHref={`${Icons}#icon-${logo}`}
-      />
-    </svg>
-  </div>
+        <svg className="icon-logo">
+          <use xlinkHref={`${Icons}#icon-${logo}`} />
+        </svg>
+    </div>
   )
 }
 
-export default SvgComponent
+export default SvgComponent;
