@@ -18,6 +18,7 @@
     "gatsby": "^4.19.2",
     "gatsby-plugin-image": "^3.3.2",
     "gatsby-plugin-layout": "^4.3.0",
+    "gatsby-plugin-manifest": "^5.9.0",
     "gatsby-plugin-sass": "^5.19.0",
     "gatsby-plugin-sharp": "^5.3.2",
     "gatsby-source-filesystem": "^5.3.1",

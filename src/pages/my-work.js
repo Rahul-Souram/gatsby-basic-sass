@@ -48,6 +48,7 @@ const MyWork = ({ data }) => {
             {workProjectDescription.data.workProjectDescription}
           </ReactMarkdown>
         </SlideUpContent>
+      <SwiperComponent Slides={data.allStrapiWorkProject.nodes} />
       </div>
       <div className="skills-container">
         <SlideUpTitle delaySec={0.5}>
@@ -100,6 +101,23 @@ export const query = graphql`
       workProjectDescription {
         data {
           workProjectDescription
+        }
+      }
+    }
+    allStrapiWorkProject {
+      nodes {
+        title
+        link
+        description {
+          data {
+            description
+          }
+        }
+        image {
+          url
+        }
+        tech_stacks {
+          logo
         }
       }
     }

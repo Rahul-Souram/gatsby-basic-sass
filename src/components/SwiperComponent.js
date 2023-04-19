@@ -24,6 +24,8 @@ const SwiperComponent = ({ Slides }) => {
         delay: 1500,
         disableOnInteraction: false,
       }}
+      speed={1000}
+      loop={true}
       breakpoints={{
         640: {
           slidesPerView: 1,
@@ -54,7 +56,7 @@ const SwiperComponent = ({ Slides }) => {
               <div className="swiper-container">
                 <div className="swiper-image-container">
                   <img
-                    src={image.url}
+                    src={image?.url}
                     alt={title}
                     width="400px"
                     height="200px"
