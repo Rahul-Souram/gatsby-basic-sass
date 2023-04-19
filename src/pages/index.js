@@ -2,17 +2,23 @@ import React from "react"
 import HomeBanner from "../components/HomeBanner"
 import "../style/global.scss"
 import { graphql } from "gatsby"
+import PageLayout from "../components/PageLayout"
 
-export default function Home({data}) {
+export default function Home({ data }) {
+  const {seo} = data.strapiHomepage ;
   return (
-    <div className="main">
+    <PageLayout seo={seo}>
       <HomeBanner data={data} />
-    </div>
+    </PageLayout>
   )
 }
 export const query = graphql`
   query MyQuery {
     strapiHomepage {
+      seo {
+        metaTitle
+        metaDescription
+      }
       tagline
       Introduction {
         data {

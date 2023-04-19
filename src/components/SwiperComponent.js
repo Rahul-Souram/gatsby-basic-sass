@@ -65,7 +65,7 @@ const SwiperComponent = ({ Slides }) => {
                   <div className="swiper-container-inner-description">
                      {truncate(description.data.description, characterLimit)}
                   </div>
-                  <div className="svg-logo-container">
+                  <div className="svg-logo-container-swiper">
                     {techStacks.map(item => {
                       return (
                         <div className="svg-logo">

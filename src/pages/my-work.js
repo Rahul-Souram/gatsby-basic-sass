@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown"
 import SvgComponent from "../components/SvgComponent"
 import { SlideUpContent } from "../animations/SideUpContent"
 import { SlideUpTitle } from "../animations/SlideUpTitle"
+import PageLayout from "../components/PageLayout"
 
 const MyWork = ({ data }) => {
   const {
@@ -12,13 +13,14 @@ const MyWork = ({ data }) => {
     personalProjectDescription,
     workProjectDescription,
     Experience,
+    seo,
   } = data.strapiWorkpage
   const { nodes } = data.allStrapiTechStack
 
   return (
-    <div className="container">
+    <PageLayout seo={seo}>
       <SlideUpTitle delaySec={0.5} durationTime={0.5}>
-      <h2 className="center-text">{title}</h2>
+        <h2 className="center-text">{title}</h2>
       </SlideUpTitle>
       <div className="list-container">
         <SlideUpContent delaySec={1} durationTime={1}>
@@ -66,7 +68,7 @@ const MyWork = ({ data }) => {
       <div className="btn work">
         <Link to="/contact">Contact Me</Link>
       </div>
-    </div>
+    </PageLayout>
   )
 }
 
@@ -80,6 +82,10 @@ export const query = graphql`
       }
     }
     strapiWorkpage {
+      seo {
+        metaTitle
+        metaDescription
+      }
       title
       Experience {
         data {

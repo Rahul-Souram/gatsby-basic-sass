@@ -1,7 +1,8 @@
 import React from "react"
+import PageLayout from "../components/PageLayout"
 
 const PageNotFound = () => {
-  return <div>404</div>
+  return <PageLayout>404</PageLayout>
 }
 
 export default PageNotFound

@@ -5,6 +5,7 @@ import SvgComponent from "../components/SvgComponent"
 import { SlideUpTitle } from "../animations/SlideUpTitle"
 import { SlideUpContent } from "../animations/SideUpContent"
 import { CardAnimation } from "../animations/CardAnimation"
+import PageLayout from "../components/PageLayout"
 
 const Contact = ({ data }) => {
   const form = useRef()
@@ -56,10 +57,10 @@ const Contact = ({ data }) => {
       }
     }
   }
-  const { title, description, phone, linkedIn } = data.strapiContactpage
+  const { title, description, phone, linkedIn, seo } = data.strapiContactpage
 
   return (
-    <div className="container">
+    <PageLayout seo={seo}>
       <SlideUpTitle delaySec={0.5} durationTime={0.5}>
         <h2 className="center-text">{title}</h2>
       </SlideUpTitle>
@@ -128,7 +129,8 @@ const Contact = ({ data }) => {
           </a>
         </div>
       </SlideUpContent>
-    </div>
+      </PageLayout>
+
   )
 }
 
@@ -137,6 +139,10 @@ export default Contact
 export const query = graphql`
   query MyQuery {
     strapiContactpage {
+      seo {
+        metaTitle
+        metaDescription
+      }
       title
       phone
       linkedIn
