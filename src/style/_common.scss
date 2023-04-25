@@ -10,10 +10,20 @@
     margin: 2rem auto;
     background: $bg;
   }
+  &:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+  }
 }
 
 .center-text {
   text-align: center;
+  @media (min-width:992px) {
+    font-size: 2rem;
+  }
+  @media (min-width:1400px) {
+    font-size: 2.5rem;
+  }
 }
 .list-container {
   margin: 1rem auto;
@@ -30,6 +40,10 @@
     }
     @media (min-width: 1200px) {
       font-size: 1.6rem;
+    }
+    li{
+      line-height: 1.4;
+      margin-bottom: 1rem;
     }
   }
 }

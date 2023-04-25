@@ -35,7 +35,7 @@ export const SlideUpTitle = ({
         }
       );
  
-  }, [delaySec]);
+  }, [delaySec, durationTime]);
 
   return (
     <div ref={ref} className={className ?? className}>

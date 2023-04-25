@@ -51,7 +51,7 @@ export const SlideUpContent = ({
         }
       );
     }
-  }, [delaySec]);
+  }, [delaySec, durationTime]);
 
   return (
     <div ref={ref} className={className ?? className}>
