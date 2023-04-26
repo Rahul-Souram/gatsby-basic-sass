@@ -65,7 +65,7 @@ const Contact = ({ data }) => {
         <h2 className="center-text">{title}</h2>
       </SlideUpTitle>
       <SlideUpTitle delaySec={0.5} durationTime={0.5}>
-        <h3 className="center-text">{description.data.description}</h3>
+        <h4 className="center-text">{description.data.description}</h4>
       </SlideUpTitle>
       <div className="form-container">
         {success && (

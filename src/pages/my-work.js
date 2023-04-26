@@ -33,7 +33,7 @@ const MyWork = ({ data }) => {
 
       <div className="container-description">
         <SlideUpContent delaySec={1} durationTime={1}>
-          <ReactMarkdown>
+          <ReactMarkdown className="container-description-inner">
             {personalProjectDescription.data.personalProjectDescription}
           </ReactMarkdown>
         </SlideUpContent>
@@ -44,7 +44,7 @@ const MyWork = ({ data }) => {
       </SlideUpTitle>
       <div className="container-description">
         <SlideUpContent delaySec={1} durationTime={1}>
-          <ReactMarkdown>
+        <ReactMarkdown className="container-description-inner">
             {workProjectDescription.data.workProjectDescription}
           </ReactMarkdown>
         </SlideUpContent>
