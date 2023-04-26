@@ -117,7 +117,7 @@ const Contact = ({ data }) => {
           </form>
         </CardAnimation>
       </div>
-      <SlideUpContent delaySec={1} >
+      <SlideUpContent delaySec={0} >
         <h3 className="center-text">You can also reach me through</h3>
         <div className="contact-details">
           <h3>

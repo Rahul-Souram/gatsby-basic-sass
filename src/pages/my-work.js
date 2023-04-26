@@ -30,9 +30,8 @@ const MyWork = ({ data }) => {
       <SlideUpTitle delaySec={0.5} durationTime={0.5}>
         <h2 className="center-text">Personal Projets</h2>
       </SlideUpTitle>
-
       <div className="container-description">
-        <SlideUpContent delaySec={1} durationTime={1}>
+        <SlideUpContent delaySec={0.5} durationTime={0.5}>
           <ReactMarkdown className="container-description-inner">
             {personalProjectDescription.data.personalProjectDescription}
           </ReactMarkdown>
@@ -43,12 +42,12 @@ const MyWork = ({ data }) => {
         <h2 className="center-text">Work Projets</h2>
       </SlideUpTitle>
       <div className="container-description">
-        <SlideUpContent delaySec={1} durationTime={1}>
-        <ReactMarkdown className="container-description-inner">
+        <SlideUpContent delaySec={1} durationTime={0.5}>
+          <ReactMarkdown className="container-description-inner">
             {workProjectDescription.data.workProjectDescription}
           </ReactMarkdown>
         </SlideUpContent>
-      <SwiperComponent Slides={data.allStrapiWorkProject.nodes} />
+        <SwiperComponent Slides={data.allStrapiWorkProject.nodes} />
       </div>
       <div className="skills-container">
         <SlideUpTitle delaySec={0.5}>
