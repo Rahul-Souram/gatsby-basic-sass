@@ -19,6 +19,9 @@ export const query = graphql`
         metaTitle
         metaDescription
       }
+      mainImage {
+        url
+      }
       tagline
       Introduction {
         data {

@@ -65,7 +65,7 @@ const Contact = ({ data }) => {
         <h2 className="center-text">{title}</h2>
       </SlideUpTitle>
       <SlideUpTitle delaySec={0.5} durationTime={0.5}>
-        <h4 className="center-text">{description.data.description}</h4>
+        <h2 className="center-text-desc">{description.data.description}</h2>
       </SlideUpTitle>
       <div className="form-container">
         {success && (
@@ -118,7 +118,7 @@ const Contact = ({ data }) => {
         </CardAnimation>
       </div>
       <SlideUpContent delaySec={0} >
-        <h3 className="center-text">You can also reach me through</h3>
+        <h3 className="center-text-desc">You can also reach me through</h3>
         <div className="contact-details">
           <h3>
             Phone : <span>{phone} </span>

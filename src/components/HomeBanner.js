@@ -1,12 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import profileImage from "../assets/images/profile.jpg"
 import { ReactMarkdown } from "react-markdown/lib/react-markdown"
 import { LeftSide } from "../animations/LeftSide"
 import { RightSide } from "../animations/RightSide"
 
 const HomeBanner = ({ data }) => {
-  const { tagline, Introduction } = data.strapiHomepage
+  const { tagline, Introduction, mainImage } = data.strapiHomepage
   return (
     <div className="container">
       <div className="home-banner-container">
@@ -25,7 +24,7 @@ const HomeBanner = ({ data }) => {
         </div>
         <div className="home-banner-image">
           <RightSide delaySec={1} durationTime={0.5}>
-            <img src={profileImage} alt="profile" />
+            <img src={mainImage.url} alt="profile" />
           </RightSide>
         </div>
       </div>
