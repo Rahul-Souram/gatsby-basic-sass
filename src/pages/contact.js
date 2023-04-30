@@ -121,8 +121,7 @@ const Contact = ({ data }) => {
         <h3 className="center-text-desc">You can also reach me through</h3>
         <div className="contact-details">
           <h3>
-            Phone : <span>{phone} </span>
-            <span>( OR )</span>
+            Phone : <span>{phone} /</span>
           </h3>
           <a href={linkedIn} target="_blank" rel="noreferrer">
             <SvgComponent logo="linkedin" />
