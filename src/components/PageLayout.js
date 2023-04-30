@@ -7,10 +7,10 @@ const PageLayout = ({ children, seo }) => {
   return (
     <div className="container">
       <Helmet>
-        <title>{seo.metaTitle || "Rahul's Portfolio "}</title>
+        <title>{seo?.metaTitle || "Rahul's Portfolio "}</title>
         <meta
           name="description"
-          content={seo.metaDescription || "I am Rahul Souram, a self-taught Front-End Developer this is my portfolio"}
+          content={seo?.metaDescription || "I am Rahul Souram, a self-taught Front-End Developer this is my portfolio"}
         />
       </Helmet>
       {children}
